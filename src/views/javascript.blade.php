@@ -10,7 +10,8 @@
         @foreach ($callbacks as $k => $o)
             {{ json_encode($k) }}: {{ $o }},
         @endforeach
-
+         
+            language: {{ json_encode(Lang::get('datatables')) }}
         });
     // custom values are available via $values array
     });
